@@ -1,0 +1,138 @@
+body {
+	width: 100%;
+	margin: 0;
+	color: white;
+	font-family: Play;
+	overflow-x: hidden;
+}
+#header {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	min-height: 300px;
+	background-image: url("bg.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: bottom;
+	z-index: 2;
+}
+#header_mask {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(22, 28, 40, 0.8);
+}
+#header_content {
+	margin: auto;
+	text-align: center;
+	font-size: 2.5em;
+}
+#header_content > * {
+	margin: 0;
+}
+#fixed_footer {
+	position: fixed;
+	height: 65px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(33, 42, 60, 0.9);
+	z-index: 1;
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media all and (min-width: 1050px) {
+	#fixed_footer {
+		display: none;
+	}
+}
+#fixed_footer_left {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	font-size: 1.5em;
+	z-index: 3;
+}
+#fixed_footer_right {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	font-size: 1.5em;
+	z-index: 3;
+}
+#content_container {
+	background-color: #2C3850;
+	box-shadow: inset 0 4px 20px black;
+	display: flex;
+}
+.content_margin {
+	flex-basis: 15%;
+	flex-shrink: 10000;
+}
+#content{
+	flex-basis: 600px;
+	flex-grow: 1;
+	padding: 50px 20px 200px;
+	font-size: 2em;
+}
+#credit {
+	display: flex;
+	padding: 10px;
+	background-color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	border: 3px double #2C3850;
+	margin-bottom: 20px;
+	color: white;
+	text-decoration: none;
+}
+#credit:hover {
+	border: 3px double #009999;
+}
+#credit > span {
+	position: relative;
+	top: 0.15em;
+	padding-left: 10px;
+}
+#pochtabank_icon {
+	background-image: url(pb.png);
+	background-size: cover;
+	width: 102px;
+	height: 50px;
+}
+#weserve {
+	margin-top: 20px;
+}
+#weserve_content {
+	display: flex;
+	position: relative;
+	top: -15px;
+	width: 100%;
+	height: 7vw;
+	font-size: 1.3vw;
+}
+#weserve_content > span {
+	position: relative;
+	flex: 1;
+}
+#weserve_content > span:hover {
+	flex: 2;
+}
+#weserve_content > span > div {
+	position: absolute;
+	left: 50%;
+}
+#weserve_content > span > div > div {
+	position: absolute;
+	left: -4em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 8em;
+	height: 8em;
+}
+.weserve_icon_small {
+	left: -3em !important;
+	width: 6em !important;
+	width: 6em !important;
+}
